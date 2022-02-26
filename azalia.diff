@@ -5,6 +5,7 @@
     for (i = 0; i < az->ncodecs; i++) {
   		codec = &az->codecs[i];
 +/*
+
   		if ((codec->audiofunc < 0) ||
         	(codec->codec_type == AZ_CODEC_TYPE_HDMI))
               continue;
