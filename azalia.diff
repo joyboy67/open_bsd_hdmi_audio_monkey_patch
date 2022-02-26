@@ -1,0 +1,14 @@
+--- azalia.c.orig	Thu Apr 23 11:44:52 2020
++++ azalia.c	Fri Apr 24 12:53:15 2020
+@@ -926,9 +926,11 @@
+  	c = -1;
+    for (i = 0; i < az->ncodecs; i++) {
+  		codec = &az->codecs[i];
++/*
+  		if ((codec->audiofunc < 0) ||
+        	(codec->codec_type == AZ_CODEC_TYPE_HDMI))
+              continue;
+ +*/
+      		if (codec->codec_type == AZ_CODEC_TYPE_DIGITAL) {
+                  if (c < 0)
+                          c = i;
